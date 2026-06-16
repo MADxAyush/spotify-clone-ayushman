@@ -1,0 +1,665 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: burlywood;
+}
+
+
+#home {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+#about {
+    margin-right: 20px;
+}
+
+#about {
+    cursor: pointer;
+}
+
+#top ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li {
+    padding-left: 20px;
+}
+
+.brand img {
+    width: 44px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    padding-left: 20px;
+}
+
+.container {
+    min-height: 62vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    background-image: url(images_spotify/girl_img.jpg);
+    background-size: cover;
+    background-position: center;
+    /* margin-bottom: 7px; */
+    margin-bottom: 39px;
+    padding: 34px;
+}
+
+.bottom {
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons {
+    margin-top: 14px;
+    color: white;
+    cursor: pointer;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+#masterPlay {
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+}
+
+#progressBar {
+    width: 80vh;
+    text-align: center;
+    cursor: pointer;
+}
+
+.songItemContainer {
+    margin: 34px;
+}
+
+
+.songItems {
+    height: 50px;
+    display: flex;
+    background-color: white;
+    width: 40%;
+    color: black;
+    margin: 6px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItems img {
+    width: 43px;
+    margin: 0 23px 0;
+    border-radius: 34px;
+}
+
+.timestamp {
+    margin: 0 23px;
+    cursor: pointer;
+}
+
+.timestamp i {
+    cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    left: 10vw;
+    color: white;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: 0.5s ease-in;
+    width: 180px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* //                           About    page                                    */
+
+
+.container2 {
+    min-height: 62vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    /* margin-bottom: 7px; */
+    margin-bottom: 39px;
+    padding: 34px;
+}
+
+.bottom2 {
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.space {
+    height: 50px;
+}
+
+.songItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.songlistplay {
+    display: flex;
+    align-items: center;
+}
+
+.timestamp {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* =========================
+   CLEAN BASE FIXES
+   ========================= */
+
+.container {
+    background-image: url(images_spotify/girl_img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container2 {
+    background-image: none;
+}
+
+.songItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.songName {
+    flex: 1;
+    text-align: center;
+}
+
+.songlistplay {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.timestamp {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+#progressBar {
+    width: min(80vw, 700px);
+    max-width: calc(100vw - 32px);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: burlywood;
+    min-height: 100vh;
+    padding-bottom: 140px; /* space for the fixed bottom player */
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#top ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+    padding: 0 14px;
+}
+
+nav ul li {
+    padding-left: 20px;
+}
+
+#home {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+#about {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.brand img {
+    width: 44px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    padding-left: 20px;
+}
+
+.container,
+.container2 {
+    width: min(70%, 1100px);
+    min-height: calc(100vh - 220px);
+    display: flex;
+    flex-direction: column;
+    margin: 23px auto 28px;
+    padding: 34px;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    background-image: url(images_spotify/girl_img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container2 {
+    background-image: none;
+}
+
+.songItemContainer {
+    margin: 34px 0 0;
+}
+
+.songItems {
+    width: 42%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background-color: white;
+    color: black;
+    margin: 6px 0;
+    border-radius: 34px;
+    overflow: hidden;
+}
+
+.songItems img {
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+    flex-shrink: 0;
+}
+
+.songName {
+    flex: 1;
+    text-align: center;
+    padding: 0 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.songlistplay {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.timestamp {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 23px 0 0;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.timestamp i {
+    cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    left: 10vw;
+    color: white;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: 0.5s ease-in;
+    width: 180px;
+}
+
+.bottom,
+.bottom2 {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.bottom2 {
+    color: white;
+}
+
+.icons {
+    margin-top: 14px;
+    color: white;
+    cursor: pointer;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+#masterPlay {
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+}
+
+#progressBar {
+    width: min(80vw, 700px);
+    max-width: calc(100vw - 32px);
+    text-align: center;
+    cursor: pointer;
+}
+
+.space {
+    height: 50px;
+}
+
+/* Tablet + desktop */
+@media (min-width: 768px) {
+    body {
+        background-color: burlywood;
+    }
+
+    .container,
+    .container2 {
+        width: min(70%, 1100px);
+        min-height: calc(100vh - 220px);
+    }
+
+    .songItems {
+        width: 42%;
+        max-width: 520px;
+    }
+
+    #progressBar {
+        width: min(80vw, 700px);
+    }
+}
+/* =========================
+   TABLETS (iPad Air / Pro)
+   ========================= */
+
+@media (min-width: 768px) and (max-width: 1100px) {
+
+    .container,
+    .container2 {
+        width: 88%;
+    }
+
+    .songItems {
+        width: 65%;
+        max-width: 520px;
+    }
+
+    #progressBar {
+        width: 75%;
+    }
+
+    .songItemContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    body {
+        background-color: burlywood;
+        padding-bottom: 150px;
+    }
+
+    #top ul {
+        height: 60px;
+        padding: 0 10px;
+    }
+
+    .brand {
+        font-size: 1rem;
+        padding-left: 10px;
+    }
+
+    .brand img {
+        width: 34px;
+    }
+
+    nav ul li {
+        padding-left: 10px;
+    }
+
+    #about {
+        margin-right: 10px;
+    }
+
+    .container,
+    .container2 {
+        width: 94%;
+        min-height: calc(100vh - 250px);
+        margin: 16px auto 18px;
+        padding: 18px 14px;
+        background-color: black;
+        background-image: none;
+    }
+
+    .songItemContainer {
+        margin: 18px 0 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .songItems {  
+        width: 85%;
+        max-width: 340px;
+        height: 44px;
+        margin: 8px auto;
+        padding: 0 8px 0 6px;
+        border-radius: 24px;
+        background-color: white;
+    }
+
+    .songItems img {
+        width: 30px;
+        margin: 0 8px 0 4px;
+        border-radius: 50%;
+    }
+
+    .songName {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .timestamp {
+        font-size: 0.72rem;
+        margin: 0 8px 0 10px;
+        gap: 5px;
+    }
+
+    .bottom,
+    .bottom2 {
+        height: auto;
+        padding: 10px 8px 12px;
+    }
+
+    #progressBar {
+        width: 90%;
+        max-width: 420px;
+    }
+
+    .icons {
+        margin-top: 0;
+    }
+
+    #masterPlay {
+        font-size: 1.7rem;
+    }
+
+    .songInfo {
+        position: static;
+        left: auto;
+        text-align: center;
+        margin-top: 2px;
+    }
+
+    .songInfo img {
+        width: 90px;
+    }
+
+    .space {
+        height: 24px;
+    }
+    .songItems img {
+    flex-shrink: 0;
+}
+
+.timestamp {
+    flex-shrink: 0;
+}
+
+.songName {
+    min-width: 0;
+}
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+    body {
+        padding-bottom: 160px;
+    }
+
+    .container,
+    .container2 {
+        width: 96%;
+        min-height: calc(100vh - 260px);
+        padding: 14px 10px;
+    }
+
+    .songItems {
+        width: 88%;
+        max-width: 300px;
+        height: 42px;
+    }
+
+    .songItems img {
+        width: 26px;
+        margin: 0 6px 0 3px;
+    }
+
+    .songName {
+        font-size: 0.72rem;
+    }
+
+    .timestamp {
+        font-size: 0.66rem;
+        gap: 4px;
+        margin: 0 6px 0 8px;
+    }
+
+    #progressBar {
+        width: 92%;
+    }
+
+    .icons i {
+        font-size: 1.4rem !important;
+    }
+
+    #masterPlay {
+        font-size: 1.5rem;
+    }
+    .songItems img {
+    flex-shrink: 0;
+}
+
+.timestamp {
+    flex-shrink: 0;
+}
+
+.songName {
+    min-width: 0;
+}
+}
